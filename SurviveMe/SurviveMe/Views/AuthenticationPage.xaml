@@ -6,58 +6,113 @@
              mc:Ignorable="d"
              x:Class="SurviveMe.Views.AuthenticationPage">
     <ContentPage.Content>
+        <ScrollView>
+        <!--Main Grid-->
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.3*"/>
-                <RowDefinition Height="0.2*"/>
-                <RowDefinition Height="0.6*"/>
-                <RowDefinition Height="0.2*"/>
-                <RowDefinition Height="0.3*"/>
-                <RowDefinition Height="0.5*"/>
-                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.05*"/>
-                <ColumnDefinition Width="0.9*"/>
-                <ColumnDefinition Width="0.05*"/>
-            </Grid.ColumnDefinitions>
-
-            <Label
-                Grid.Column="1"
-                HorizontalOptions="Start"
-                Text="Register"/>
-            <Label
-                Grid.Row="1"
-                Grid.Column="1"
-                HorizontalOptions="Start"
-                Text="Email address"/>
-            <Entry 
-                Grid.Row="2"
-                Grid.Column="1"/>
-            <Label
-                Grid.Row="3"
-                Grid.Column="1"
-                HorizontalOptions="Start"
-                Text="Password"/>
-            <Label
-                Grid.Row="4"
-                Grid.Column="1"
-                HorizontalOptions="Start"
-                Text="Passwords must be 8 characters long, contain one upper case letter and one number"/>
-            <Entry
-                Grid.Row="5"
-                Grid.Column="1"
-                IsPassword="True"/>
-            <Button
-                Grid.Row="6"
-                Grid.Column="1"
-                HorizontalOptions="End"
-                Text="Next"
-                CornerRadius="7"
-                BackgroundColor="DarkGreen"
-                TextColor="White"
-                Clicked="Button_Clicked"/>
+            <!--Credentials Grid-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.05*" />
+                    <ColumnDefinition Width="0.9*" />
+                    <ColumnDefinition Width="0.05*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.ColumnSpan="3"
+                       Text="Enter your credentials"
+                       TextColor="White"
+                       FontSize="Medium"
+                       BackgroundColor="ForestGreen"
+                       VerticalTextAlignment="Center" />
+                <StackLayout Grid.Row="1"
+                             Grid.Column="1">
+                    <Entry Grid.Row="1"
+                           Grid.Column="1"
+                           Placeholder="Email"
+                           Keyboard="Email"
+                           Margin="0,0,0,20" />
+                    <Label HorizontalOptions="Start"
+                           Text="Passwords must be 8 characters long, contain one upper case letter and one number"
+                           Margin="0" />
+                    <Entry Placeholder="Password"
+                           IsPassword="True"
+                           Margin="0" />
+                </StackLayout>
+            </Grid>
+                <!--Contact details grid-->
+                <Grid
+                    Grid.Row="1">
+                    <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.05*"/>
+                        <ColumnDefinition Width="0.9*"/>
+                        <ColumnDefinition Width="0.05*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label
+                        Grid.ColumnSpan="3"
+                        Text="Enter your contact details"
+                        TextColor="White"
+                        FontSize="Medium"
+                        BackgroundColor="ForestGreen"
+                        VerticalTextAlignment="Center"/>
+                    <StackLayout Grid.Row="1"
+                                 Grid.Column="1">
+                        <Entry Placeholder="Your name"
+                               Margin="0,0,0,20" />
+                        <Entry Placeholder="Phone number"
+                               Keyboard="Numeric"
+                               Margin="0,0,0,20"/>
+                        <Label Text="Let us know where you live so we can offer help in your area"/>
+                        <Entry Placeholder="Postcode"/>
+                        <Entry Placeholder="House or flat no."/>
+                    </StackLayout>
+                </Grid>
+            <!--Emergency contact grid-->
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.05*" />
+                        <ColumnDefinition Width="0.9*" />
+                        <ColumnDefinition Width="0.05*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.ColumnSpan="3"
+                           Text="Emergency contact"
+                           TextColor="White"
+                           FontSize="Medium"
+                           BackgroundColor="ForestGreen"
+                           VerticalTextAlignment="Center" />
+                    <StackLayout Grid.Row="1"
+                                 Grid.Column="1">
+                        <Label Text="Tell us about your next of kin or another contact"/>
+                        <Entry Placeholder="Name" />
+                        <Entry Placeholder="Phone number"
+                               Keyboard="Numeric" />
+                        <Entry Placeholder="Email address"
+                               Keyboard="Email" />
+                    </StackLayout>
+                </Grid>
+            <Button Grid.Row="3"
+                    HorizontalOptions="End"
+                    Text="Next"
+                    CornerRadius="7"
+                    BackgroundColor="DarkGreen"
+                    TextColor="White"
+                    Clicked="Button_Clicked" />
         </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
