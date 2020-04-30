@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SurviveMe.Views.AuthenticationPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.3*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.05*"/>
+                <ColumnDefinition Width="0.9*"/>
+                <ColumnDefinition Width="0.05*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                Text="Register"/>
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                Text="Email address"/>
+            <Entry 
+                Grid.Row="2"
+                Grid.Column="1"/>
+            <Label
+                Grid.Row="3"
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                Text="Password"/>
+            <Label
+                Grid.Row="4"
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                Text="Passwords must be 8 characters long, contain one upper case letter and one number"/>
+            <Entry
+                Grid.Row="5"
+                Grid.Column="1"
+                IsPassword="True"/>
+            <Button
+                Grid.Row="6"
+                Grid.Column="1"
+                HorizontalOptions="End"
+                Text="Next"
+                CornerRadius="7"
+                BackgroundColor="DarkGreen"
+                TextColor="White"
+                Clicked="Button_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
