@@ -34,7 +34,7 @@ namespace SurviveMe.Views
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
+            await Navigation.PushAsync(new AboutPage());
         }
 
         protected override void OnAppearing()

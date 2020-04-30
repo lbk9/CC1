@@ -1,5 +1,7 @@
-﻿using System;
+﻿using SurviveMe.ViewModels;
+using System;
 using System.ComponentModel;
+using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,6 +15,14 @@ namespace SurviveMe.Views
         public AboutPage()
         {
             InitializeComponent();
+            FinishRegStack.IsVisible = showHelpStack();
+        }
+
+        private bool showHelpStack()
+        {
+            var doesExist = false;
+            doesExist = Navigation.NavigationStack.Any(p => p is AppShell) ? true : false;
+            return doesExist;
         }
     }
 }

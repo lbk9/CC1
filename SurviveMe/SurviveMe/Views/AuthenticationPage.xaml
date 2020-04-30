@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="SurviveMe.Views.AuthenticationPage">
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView x:Name="RegScrollView">
         <!--Main Grid-->
         <Grid>
             <Grid.RowDefinitions>
