@@ -45,17 +45,5 @@
             <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
                    FontSize="Body" />
         </StackLayout>
-        <StackLayout Grid.Row="3"
-                     Grid.Column="1"
-                     x:Name="FinishRegStack">
-            <Label Text="Help with registration"
-                   FontSize="Medium"
-                   TextColor="Black" />
-            <Label Text="Email us and one of our volunteers will get back to you"
-                   FontSize="Body" />
-            <Button Text="Finish registering"
-                    TextColor="White"
-                    BackgroundColor="DarkGreen"/>
-        </StackLayout>
     </Grid>
 </ContentPage>

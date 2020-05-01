@@ -2,12 +2,10 @@ D:\SurviveMe\SurviveMe\SurviveMe\bin\Debug\netstandard2.0\SurviveMe.deps.json
 D:\SurviveMe\SurviveMe\SurviveMe\bin\Debug\netstandard2.0\SurviveMe.dll
 D:\SurviveMe\SurviveMe\SurviveMe\bin\Debug\netstandard2.0\ref\SurviveMe.dll
 D:\SurviveMe\SurviveMe\SurviveMe\bin\Debug\netstandard2.0\SurviveMe.pdb
-D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.csprojAssemblyReference.cache
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
-D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.csproj.CoreCompileInputs.cache
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.AssemblyInfoInputs.cache
@@ -17,3 +15,5 @@ D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.dll
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\ref\SurviveMe.dll
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.pdb
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\Views\AuthenticationPage.xaml.g.cs
+D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\Views\DashboardPage.xaml.g.cs
+D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.csprojAssemblyReference.cache

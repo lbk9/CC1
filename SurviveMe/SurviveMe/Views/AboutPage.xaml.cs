@@ -15,14 +15,6 @@ namespace SurviveMe.Views
         public AboutPage()
         {
             InitializeComponent();
-            FinishRegStack.IsVisible = showHelpStack();
-        }
-
-        private bool showHelpStack()
-        {
-            var doesExist = false;
-            doesExist = Navigation.NavigationStack.Any(p => p is AppShell) ? true : false;
-            return doesExist;
         }
     }
 }
