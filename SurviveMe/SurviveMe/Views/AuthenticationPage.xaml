@@ -4,9 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SurviveMe.Views.AuthenticationPage">
+             x:Class="SurviveMe.Views.AuthenticationPage"
+             Title="CC1: Hussars">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Help" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView x:Name="RegScrollView">
         <!--Main Grid-->
         <Grid>
             <Grid.RowDefinitions>
@@ -18,7 +22,7 @@
             <!--Credentials Grid-->
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="70"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
@@ -26,32 +30,47 @@
                     <ColumnDefinition Width="0.9*" />
                     <ColumnDefinition Width="0.05*" />
                 </Grid.ColumnDefinitions>
-                <Label Grid.ColumnSpan="3"
-                       Text="Enter your credentials"
-                       TextColor="White"
-                       FontSize="Medium"
-                       BackgroundColor="ForestGreen"
-                       VerticalTextAlignment="Center" />
+                <Frame Grid.ColumnSpan="3"
+                       BorderColor="Black"
+                       BackgroundColor="{StaticResource cc1green}"
+                       HasShadow="True">
+                        <Label Text="Enter your credentials"
+                               TextColor="{StaticResource cc1white}"
+                               FontSize="Medium"
+                               LineBreakMode="TailTruncation"/>
+                    </Frame>
                 <StackLayout Grid.Row="1"
                              Grid.Column="1">
-                    <Entry Grid.Row="1"
-                           Grid.Column="1"
-                           Placeholder="Email"
-                           Keyboard="Email"
-                           Margin="0,0,0,20" />
-                    <Label HorizontalOptions="Start"
+                        <Entry Placeholder="Email"
+                               Keyboard="Email"
+                               x:Name="UserEmail"
+                               Margin="0,0,0,20" />
+                        <Label HorizontalOptions="Start"
                            Text="Passwords must be 8 characters long, contain one upper case letter and one number"
                            Margin="0" />
-                    <Entry Placeholder="Password"
-                           IsPassword="True"
-                           Margin="0" />
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.8*" />
+                                <ColumnDefinition Width="0.2*" />
+                            </Grid.ColumnDefinitions>
+                            <Entry Placeholder="Password"
+                                   IsPassword="True"
+                                   Margin="0"
+                                   x:Name="UserPassword"/>
+                            <Button Grid.Column="1"
+                                    Text="Show Pass"
+                                    FontSize="Micro"
+                                    BackgroundColor="{StaticResource cc1orange}"
+                                    Clicked="UpdatePasswordVisibility"/>
+                        </Grid>
+                       
                 </StackLayout>
             </Grid>
                 <!--Contact details grid-->
                 <Grid
                     Grid.Row="1">
                     <Grid.RowDefinitions>
-                    <RowDefinition Height="50" />
+                    <RowDefinition Height="70" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
@@ -59,29 +78,35 @@
                         <ColumnDefinition Width="0.9*"/>
                         <ColumnDefinition Width="0.05*"/>
                     </Grid.ColumnDefinitions>
-                    <Label
-                        Grid.ColumnSpan="3"
-                        Text="Enter your contact details"
-                        TextColor="White"
-                        FontSize="Medium"
-                        BackgroundColor="ForestGreen"
-                        VerticalTextAlignment="Center"/>
+                    <Frame Grid.ColumnSpan="3"
+                           BorderColor="Black"
+                           BackgroundColor="{StaticResource cc1green}"
+                           HasShadow="True">
+                        <Label Text="Enter your contact details"
+                               TextColor="{StaticResource cc1white}"
+                               FontSize="Medium"
+                               LineBreakMode="TailTruncation" />
+                    </Frame>
                     <StackLayout Grid.Row="1"
                                  Grid.Column="1">
                         <Entry Placeholder="Your name"
+                               x:Name="UserName"
                                Margin="0,0,0,20" />
                         <Entry Placeholder="Phone number"
                                Keyboard="Numeric"
+                               x:Name="UserPhoneNumber"
                                Margin="0,0,0,20"/>
                         <Label Text="Let us know where you live so we can offer help in your area"/>
-                        <Entry Placeholder="Postcode"/>
-                        <Entry Placeholder="House or flat no."/>
+                        <Entry Placeholder="Postcode"
+                               x:Name="UserPostCode"/>
+                        <Entry Placeholder="House or flat no."
+                               x:Name="UserHouseNumber"/>
                     </StackLayout>
                 </Grid>
             <!--Emergency contact grid-->
                 <Grid Grid.Row="2">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="70"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
@@ -89,29 +114,35 @@
                         <ColumnDefinition Width="0.9*" />
                         <ColumnDefinition Width="0.05*" />
                     </Grid.ColumnDefinitions>
-                    <Label Grid.ColumnSpan="3"
-                           Text="Emergency contact"
-                           TextColor="White"
-                           FontSize="Medium"
-                           BackgroundColor="ForestGreen"
-                           VerticalTextAlignment="Center" />
+                    <Frame Grid.ColumnSpan="3"
+                           BorderColor="Black"
+                           BackgroundColor="{StaticResource cc1green}"
+                           HasShadow="True">
+                        <Label Text="Emergency contact"
+                               TextColor="{StaticResource cc1white}"
+                               FontSize="Medium"
+                               LineBreakMode="TailTruncation" />
+                    </Frame>
                     <StackLayout Grid.Row="1"
                                  Grid.Column="1">
                         <Label Text="Tell us about your next of kin or another contact"/>
-                        <Entry Placeholder="Name" />
+                        <Entry Placeholder="Name"
+                               x:Name="UserEmergencyName"/>
                         <Entry Placeholder="Phone number"
-                               Keyboard="Numeric" />
+                               Keyboard="Numeric"
+                               x:Name="UserEmergencyNumber"/>
                         <Entry Placeholder="Email address"
-                               Keyboard="Email" />
+                               Keyboard="Email"
+                               x:Name="UserEmergencyEmail"/>
                     </StackLayout>
                 </Grid>
             <Button Grid.Row="3"
                     HorizontalOptions="End"
-                    Text="Next"
+                    Text="Finish"
                     CornerRadius="7"
-                    BackgroundColor="DarkGreen"
-                    TextColor="White"
-                    Clicked="Button_Clicked" />
+                    BackgroundColor="{StaticResource cc1orange}"
+                    TextColor="{StaticResource cc1white}"
+                    Clicked="OnRegistrationComplete" />
         </Grid>
         </ScrollView>
     </ContentPage.Content>

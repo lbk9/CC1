@@ -6,6 +6,16 @@
              mc:Ignorable="d"
              x:Class="SurviveMe.App">
     <Application.Resources>
-        
+        <ResourceDictionary>
+            <Color x:Key="cc1green">#77AD96</Color>
+            <Color x:Key="cc1orange">#E87F44</Color>
+            <Color x:Key="cc1white">#FFFFFF</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor"
+                        Value="{StaticResource cc1green}" />
+                <Setter Property="BarTextColor"
+                        Value="{StaticResource cc1white}"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -14,7 +14,7 @@ namespace SurviveMe
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
-            MainPage = new AuthenticationPage();
+            MainPage = new NavigationPage(new AuthenticationPage());
         }
 
         protected override void OnStart()
