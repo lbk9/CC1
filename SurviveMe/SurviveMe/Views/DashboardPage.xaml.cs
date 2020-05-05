@@ -10,19 +10,16 @@ using SurviveMe.Models;
 using SurviveMe.Views;
 using SurviveMe.ViewModels;
 using Xamarin.Essentials;
+using SurviveMe.Services;
 
 namespace SurviveMe.Views
 {
     [DesignTimeVisible(false)]
     public partial class DashboardPage : ContentPage
     {
-        DashboardViewModel viewModel;
-
         public DashboardPage()
         {
             InitializeComponent();
-
-            BindingContext = viewModel = new DashboardViewModel();
         }
 
         async void OnItemSelected(object sender, EventArgs args)
@@ -40,9 +37,6 @@ namespace SurviveMe.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-
-            if (viewModel.Items.Count == 0)
-                viewModel.IsBusy = true;
         }
 
         private void Button_Clicked(object sender, EventArgs e)

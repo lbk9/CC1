@@ -3,10 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:SurviveMe.ViewModels"
+             xmlns:svc="clr-namespace:SurviveMe.Services"
              mc:Ignorable="d"
              x:Class="SurviveMe.Views.DashboardPage"
              Title="{Binding Title}"
              x:Name="BrowseItemsPage">
+    <ContentPage.BindingContext>
+        <vm:DashboardViewModel />
+    </ContentPage.BindingContext>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Help" Clicked="AddItem_Clicked" />
     </ContentPage.ToolbarItems>
@@ -14,24 +19,58 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.4*"/>
                 <RowDefinition Height="0.2*"/>
-                <RowDefinition Height="0.4*"/>
+                <RowDefinition Height="0.6*" />
+                <RowDefinition Height="0.2*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.25*"/>
-                <ColumnDefinition Width="0.5*"/>
-                <ColumnDefinition Width="0.25*"/>
+                <ColumnDefinition Width="0.25*" />
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.25*" />
             </Grid.ColumnDefinitions>
-
-            <Button
+            <StackLayout
                 Grid.Row="1"
-                Grid.Column="1"
-                Clicked="Button_Clicked"
-                Text="Dial"
-                CornerRadius="10"
-                BackgroundColor="{StaticResource cc1orange}"
-                TextColor="White"/>
+                Grid.ColumnSpan="3"
+                Orientation="Horizontal"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand">
+                <StackLayout WidthRequest="115">
+                    <Button Clicked="Button_Clicked"
+                            Text=":)"
+                            FontSize="Large"
+                            CornerRadius="10"
+                            HeightRequest="90"
+                            BackgroundColor="{StaticResource cc1darkgreen}"
+                            TextColor="White"/>
+                    <Label Text="If someone has the time"
+                           LineBreakMode="WordWrap"
+                           HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout WidthRequest="115">
+                    <Button Clicked="Button_Clicked"
+                            Text=":|"
+                            FontSize="Large"
+                            CornerRadius="10"
+                            HeightRequest="90"
+                            BackgroundColor="{StaticResource cc1orange}"
+                            TextColor="White" />
+                    <Label Text="I could do with a chat"
+                           LineBreakMode="WordWrap"
+                           HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout WidthRequest="115">
+                    <Button Clicked="Button_Clicked"
+                            Text=":("
+                            FontSize="Large"
+                            CornerRadius="10"
+                            HeightRequest="90"
+                            BackgroundColor="{StaticResource cc1red}"
+                            TextColor="White" />
+                    <Label Text="Not in a good place"
+                           LineBreakMode="WordWrap"
+                           HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

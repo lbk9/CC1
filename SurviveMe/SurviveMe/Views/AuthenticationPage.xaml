@@ -6,9 +6,6 @@
              mc:Ignorable="d"
              x:Class="SurviveMe.Views.AuthenticationPage"
              Title="CC1: Hussars">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Help" Clicked="ToolbarItem_Clicked"/>
-    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView x:Name="RegScrollView">
         <!--Main Grid-->

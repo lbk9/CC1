@@ -17,3 +17,4 @@ D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.pdb
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\Views\AuthenticationPage.xaml.g.cs
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\Views\DashboardPage.xaml.g.cs
 D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.csprojAssemblyReference.cache
+D:\SurviveMe\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\Views\LandingPage.xaml.g.cs
