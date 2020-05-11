@@ -8,8 +8,11 @@
     <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="cc1green">#77AD96</Color>
+            <Color x:Key="cc1darkgreen">#009900</Color>
             <Color x:Key="cc1orange">#E87F44</Color>
+            <Color x:Key="cc1red">#E60000</Color>
             <Color x:Key="cc1white">#FFFFFF</Color>
+            <Color x:Key="cc1grey">#BABABA</Color>
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor"
                         Value="{StaticResource cc1green}" />

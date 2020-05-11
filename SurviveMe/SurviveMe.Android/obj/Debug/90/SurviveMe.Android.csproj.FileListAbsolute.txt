@@ -478,3 +478,8 @@ D:\SurviveMe\SurviveMe\SurviveMe.Android\obj\Debug\90\stamp\_ConvertResourcesCas
 D:\SurviveMe\SurviveMe\SurviveMe.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 D:\SurviveMe\SurviveMe\SurviveMe.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 D:\SurviveMe\SurviveMe\SurviveMe.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\SurviveMe\SurviveMe\SurviveMe.Android\obj\Debug\90\android\assets\Firebase.dll
+D:\SurviveMe\SurviveMe\SurviveMe.Android\obj\Debug\90\android\assets\LiteDB.dll
+D:\SurviveMe\SurviveMe\SurviveMe.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
+D:\SurviveMe\SurviveMe\SurviveMe.Android\obj\Debug\90\android\assets\System.Reactive.dll
+D:\SurviveMe\SurviveMe\SurviveMe.Android\obj\Debug\90\android\assets\System.Runtime.InteropServices.WindowsRuntime.dll

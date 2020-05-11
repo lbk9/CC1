@@ -1,4 +1,5 @@
 ﻿using SurviveMe.Models;
+using SurviveMe.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,8 +19,9 @@ namespace SurviveMe.Views
             InitializeComponent();
         }
 
-        private void OnRegistrationComplete(object sender, EventArgs e)
+        private async void OnRegistrationComplete(object sender, EventArgs e)
         {
+            UserService userService = new UserService();
             User user = new User
             {
                 Id = Guid.NewGuid(),
@@ -39,12 +41,11 @@ namespace SurviveMe.Views
                     PhoneNumber = UserEmergencyNumber.Text
                 }
             };
-            Application.Current.MainPage = new AppShell();
-        }
 
-        private async void ToolbarItem_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new AboutPage());
+            // persist this model to DB using UserService
+            userService.StoreUser(user);
+            await DisplayAlert("Registration Complete", "Thank you for providing your details to us", "Ok");
+            Application.Current.MainPage = new AppShell();
         }
 
         private void UpdatePasswordVisibility(object sender, EventArgs e)

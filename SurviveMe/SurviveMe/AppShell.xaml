@@ -30,7 +30,7 @@
         <Tab Title="Dashboard" Icon="tab_feed.png">
             <ShellContent ContentTemplate="{DataTemplate local:DashboardPage}" />
         </Tab>
-        <Tab Title="About" Icon="tab_about.png">
+        <Tab Title="Help" Icon="tab_about.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
     </TabBar>
