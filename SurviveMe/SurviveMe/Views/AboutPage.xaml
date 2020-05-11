@@ -29,20 +29,17 @@
             <Label Text="This app is for helping with a crisis but not an emergency where you're in danger. If you or someone else needs urgent help call 999."
                    FontSize="Body"/>
         </StackLayout>
-        <StackLayout Grid.Row="1"
-                     Grid.Column="1">
-            <Label Text="Samaritans"
-                   FontSize="Medium"
-                   TextColor="Black" />
-            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                   FontSize="Body"/>
-        </StackLayout>
+        <Label Grid.Row="1"
+               Grid.Column="1" 
+               Text="If you or someone you know needs immediate help call 999"/>
         <StackLayout Grid.Row="2"
                      Grid.Column="1">
-            <Label Text="Citizens Advice"
+            <Label Text="Need help with registration"
                    FontSize="Medium"
                    TextColor="Black" />
-            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            <Label Text="If you are having problems with registration, please email our support team at:"
+                   FontSize="Body" />
+            <Label Text="CC1Hussars@xyz.com"
                    FontSize="Body" />
         </StackLayout>
     </Grid>

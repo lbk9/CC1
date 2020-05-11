@@ -6,9 +6,6 @@
              mc:Ignorable="d"
              x:Class="SurviveMe.Views.AuthenticationPage"
              Title="CC1: Hussars">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Help" Clicked="ToolbarItem_Clicked"/>
-    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView x:Name="RegScrollView">
         <!--Main Grid-->
@@ -41,23 +38,38 @@
                     </Frame>
                 <StackLayout Grid.Row="1"
                              Grid.Column="1">
-                        <Entry Placeholder="Email"
-                               Keyboard="Email"
-                               x:Name="UserEmail"
-                               Margin="0,0,0,20" />
+                        <StackLayout>
+                            <Label FontSize="Subtitle"
+                                   TextColor="Black"
+                                   Text="Email"
+                                   Margin="5,0,0,0"/>
+                            <Entry Keyboard="Email"
+                                   x:Name="UserEmail"
+                                   Margin="0,0,0,20"/>
+                        </StackLayout>
+                        
                         <Label HorizontalOptions="Start"
                            Text="Passwords must be 8 characters long, contain one upper case letter and one number"
-                           Margin="0" />
+                           Margin="5,0,0,0" />
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="0.8*" />
                                 <ColumnDefinition Width="0.2*" />
                             </Grid.ColumnDefinitions>
-                            <Entry Placeholder="Password"
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30" />
+                                <RowDefinition Height="50" />
+                            </Grid.RowDefinitions>
+                            <Label FontSize="Subtitle"
+                                   TextColor="Black"
+                                   Text="Password"
+                                   Margin="5,0,0,0"/>
+                            <Entry Grid.Row="1"
                                    IsPassword="True"
                                    Margin="0"
                                    x:Name="UserPassword"/>
                             <Button Grid.Column="1"
+                                    Grid.Row="1"
                                     Text="Show Pass"
                                     FontSize="Micro"
                                     BackgroundColor="{StaticResource cc1orange}"
@@ -89,18 +101,42 @@
                     </Frame>
                     <StackLayout Grid.Row="1"
                                  Grid.Column="1">
-                        <Entry Placeholder="Your name"
-                               x:Name="UserName"
-                               Margin="0,0,0,20" />
-                        <Entry Placeholder="Phone number"
-                               Keyboard="Numeric"
-                               x:Name="UserPhoneNumber"
-                               Margin="0,0,0,20"/>
+                        <StackLayout>
+                            <Label FontSize="Subtitle"
+                                   TextColor="Black"
+                                   Text="Your name"
+                                   Margin="5,0,0,0"/>
+                            <Entry x:Name="UserName"
+                                   Margin="0,0,0,20" />
+                        </StackLayout>
+                        <StackLayout>
+                            <Label FontSize="Subtitle"
+                                   TextColor="Black"
+                                   Text="Phone number"
+                                   Margin="5,0,0,0"/>
+                            <Entry Keyboard="Numeric"
+                                   x:Name="UserPhoneNumber"
+                                   Margin="0,0,0,20" />
+                        </StackLayout>
+                        
                         <Label Text="Let us know where you live so we can offer help in your area"/>
-                        <Entry Placeholder="Postcode"
-                               x:Name="UserPostCode"/>
-                        <Entry Placeholder="House or flat no."
-                               x:Name="UserHouseNumber"/>
+                        <StackLayout>
+                            <Label FontSize="Subtitle"
+                                   TextColor="Black"
+                                   Text="Postcode"
+                                   Margin="5,0,0,0" />
+                            <Entry x:Name="UserPostCode" />
+                        </StackLayout>
+                        
+                        <StackLayout>
+                            <Label FontSize="Subtitle"
+                                   TextColor="Black"
+                                   Text="House or flat no."
+                                   Margin="5,0,0,0" />
+                            <Entry Keyboard="Numeric"
+                                   x:Name="UserHouseNumber" />
+                        </StackLayout>
+                        
                     </StackLayout>
                 </Grid>
             <!--Emergency contact grid-->
@@ -126,20 +162,34 @@
                     <StackLayout Grid.Row="1"
                                  Grid.Column="1">
                         <Label Text="Tell us about your next of kin or another contact"/>
-                        <Entry Placeholder="Name"
-                               x:Name="UserEmergencyName"/>
-                        <Entry Placeholder="Phone number"
-                               Keyboard="Numeric"
-                               x:Name="UserEmergencyNumber"/>
-                        <Entry Placeholder="Email address"
-                               Keyboard="Email"
-                               x:Name="UserEmergencyEmail"/>
+                        <StackLayout>
+                            <Label FontSize="Subtitle"
+                                   TextColor="Black"
+                                   Text="Name"
+                                   Margin="5,0,0,0" />
+                            <Entry x:Name="UserEmergencyName" />
+                        </StackLayout>
+                        <StackLayout>
+                            <Label FontSize="Subtitle"
+                                   TextColor="Black"
+                                   Text="Phone number"
+                                   Margin="5,0,0,0" />
+                            <Entry Keyboard="Numeric"
+                                   x:Name="UserEmergencyNumber" />
+                        </StackLayout>
+                        <StackLayout>
+                            <Label FontSize="Subtitle"
+                                   TextColor="Black"
+                                   Text="Email address"
+                                   Margin="5,0,0,0" />
+                            <Entry Keyboard="Email"
+                                   x:Name="UserEmergencyEmail" />
+                        </StackLayout>
+                        
                     </StackLayout>
                 </Grid>
             <Button Grid.Row="3"
-                    HorizontalOptions="End"
                     Text="Finish"
-                    CornerRadius="7"
                     BackgroundColor="{StaticResource cc1orange}"
                     TextColor="{StaticResource cc1white}"
                     Clicked="OnRegistrationComplete" />
