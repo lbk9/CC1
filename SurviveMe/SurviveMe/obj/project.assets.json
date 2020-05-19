@@ -1387,11 +1387,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SurviveMe\\SurviveMe\\SurviveMe\\SurviveMe.csproj",
+      "projectUniqueName": "D:\\CC1\\SurviveMe\\SurviveMe\\SurviveMe.csproj",
       "projectName": "SurviveMe",
-      "projectPath": "D:\\SurviveMe\\SurviveMe\\SurviveMe\\SurviveMe.csproj",
+      "projectPath": "D:\\CC1\\SurviveMe\\SurviveMe\\SurviveMe.csproj",
       "packagesPath": "C:\\Users\\liamk\\.nuget\\packages\\",
-      "outputPath": "D:\\SurviveMe\\SurviveMe\\SurviveMe\\obj\\",
+      "outputPath": "D:\\CC1\\SurviveMe\\SurviveMe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",

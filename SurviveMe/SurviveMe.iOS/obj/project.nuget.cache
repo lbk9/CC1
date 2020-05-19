@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P7fsPTIkQyTG976qPA1rg3VwFS8y4xUMIDzJFNEXcD0EQrssJ7pHngPjGJZ+Kt0aC6jWUIjAg67iVkRLzRyRbQ==",
+  "dgSpecHash": "26H4DvdopFdgOi+xTX2D27H6T+LviS/9wvLwtMcd433tAQvy7dxhMH+dTNxyVU48Dr2miPoJUGJcuXmoCVADZg==",
   "success": true,
-  "projectFilePath": "D:\\SurviveMe\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj",
+  "projectFilePath": "D:\\CC1\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\liamk\\.nuget\\packages\\firebasedatabase.net\\4.0.4\\firebasedatabase.net.4.0.4.nupkg.sha512",
     "C:\\Users\\liamk\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",

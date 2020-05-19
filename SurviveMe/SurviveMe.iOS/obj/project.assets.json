@@ -1612,11 +1612,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SurviveMe\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj",
+      "projectUniqueName": "D:\\CC1\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj",
       "projectName": "SurviveMe.iOS",
-      "projectPath": "D:\\SurviveMe\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj",
+      "projectPath": "D:\\CC1\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj",
       "packagesPath": "C:\\Users\\liamk\\.nuget\\packages\\",
-      "outputPath": "D:\\SurviveMe\\SurviveMe\\SurviveMe.iOS\\obj\\",
+      "outputPath": "D:\\CC1\\SurviveMe\\SurviveMe.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1637,8 +1637,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\SurviveMe\\SurviveMe\\SurviveMe\\SurviveMe.csproj": {
-              "projectPath": "D:\\SurviveMe\\SurviveMe\\SurviveMe\\SurviveMe.csproj"
+            "D:\\CC1\\SurviveMe\\SurviveMe\\SurviveMe.csproj": {
+              "projectPath": "D:\\CC1\\SurviveMe\\SurviveMe\\SurviveMe.csproj"
             }
           }
         }
