@@ -57,3 +57,7 @@ D:\SurviveMe\SurviveMe\SurviveMe.iOS\obj\iPhone\Debug\XamlC.stamp
 D:\SurviveMe\SurviveMe\SurviveMe.iOS\obj\iPhone\Debug\SurviveMe.iOS.csproj.CopyComplete
 D:\SurviveMe\SurviveMe\SurviveMe.iOS\obj\iPhone\Debug\SurviveMe.iOS.exe
 D:\SurviveMe\SurviveMe\SurviveMe.iOS\obj\iPhone\Debug\SurviveMe.iOS.pdb
+D:\SurviveMe\SurviveMe\SurviveMe.iOS\bin\iPhone\Debug\Firebase.dll
+D:\SurviveMe\SurviveMe\SurviveMe.iOS\bin\iPhone\Debug\LiteDB.dll
+D:\SurviveMe\SurviveMe\SurviveMe.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+D:\SurviveMe\SurviveMe\SurviveMe.iOS\bin\iPhone\Debug\System.Reactive.dll

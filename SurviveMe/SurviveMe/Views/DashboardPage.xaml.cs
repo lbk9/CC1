@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using SurviveMe.Models;
-using SurviveMe.Views;
+﻿using SurviveMe.Models;
 using SurviveMe.ViewModels;
+using System;
+using System.ComponentModel;
 using Xamarin.Essentials;
-using SurviveMe.Services;
+using Xamarin.Forms;
 
 namespace SurviveMe.Views
 {
@@ -42,6 +35,16 @@ namespace SurviveMe.Views
         private async void TalkToVeteranClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new BookACallPage());
+        }
+
+        private async void InfoClicked(object sender, EventArgs e)
+        {
+            await Browser.OpenAsync("https://www.veteransgateway.org.uk/local-support/", BrowserLaunchMode.SystemPreferred);
+        }
+
+        private async void HelpClicked(object sender, EventArgs e)
+        {
+            await Browser.OpenAsync("https://www.samaritans.org/scotland/how-we-can-help/if-youre-worried-about-someone-else/", BrowserLaunchMode.SystemPreferred);
         }
     }
 }

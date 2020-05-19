@@ -18,6 +18,8 @@
                 <RowDefinition Height="100" />
                 <RowDefinition Height="100" />
                 <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.1*" />
@@ -42,7 +44,21 @@
                     CornerRadius="10"
                     BackgroundColor="{StaticResource cc1orange}"
                     TextColor="White"
-                    Clicked="TalkToVeteranClicked"/>
+                    Clicked="TalkToVeteranClicked" />
+            <Button Grid.Row="3"
+                    Grid.Column="1"
+                    Text="Information, advice and support services"
+                    CornerRadius="10"
+                    BackgroundColor="{StaticResource cc1green}"
+                    TextColor="White"
+                    Clicked="InfoClicked" />
+            <Button Grid.Row="4"
+                    Grid.Column="1"
+                    Text="Worried about someone?"
+                    CornerRadius="10"
+                    BackgroundColor="{StaticResource cc1green}"
+                    TextColor="White"
+                    Clicked="HelpClicked" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>
