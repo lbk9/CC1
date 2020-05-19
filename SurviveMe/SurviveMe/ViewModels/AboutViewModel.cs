@@ -1,7 +1,4 @@
-﻿using SurviveMe.Views;
-using System;
-using System.Linq;
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 

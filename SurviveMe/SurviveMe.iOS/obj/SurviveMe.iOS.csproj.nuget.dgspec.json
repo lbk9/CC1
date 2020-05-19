@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SurviveMe\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj": {}
+    "D:\\CC1\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj": {}
   },
   "projects": {
-    "D:\\SurviveMe\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj": {
+    "D:\\CC1\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SurviveMe\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj",
+        "projectUniqueName": "D:\\CC1\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj",
         "projectName": "SurviveMe.iOS",
-        "projectPath": "D:\\SurviveMe\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj",
+        "projectPath": "D:\\CC1\\SurviveMe\\SurviveMe.iOS\\SurviveMe.iOS.csproj",
         "packagesPath": "C:\\Users\\liamk\\.nuget\\packages\\",
-        "outputPath": "D:\\SurviveMe\\SurviveMe\\SurviveMe.iOS\\obj\\",
+        "outputPath": "D:\\CC1\\SurviveMe\\SurviveMe.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "D:\\SurviveMe\\SurviveMe\\SurviveMe\\SurviveMe.csproj": {
-                "projectPath": "D:\\SurviveMe\\SurviveMe\\SurviveMe\\SurviveMe.csproj"
+              "D:\\CC1\\SurviveMe\\SurviveMe\\SurviveMe.csproj": {
+                "projectPath": "D:\\CC1\\SurviveMe\\SurviveMe\\SurviveMe.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\SurviveMe\\SurviveMe\\SurviveMe\\SurviveMe.csproj": {
+    "D:\\CC1\\SurviveMe\\SurviveMe\\SurviveMe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SurviveMe\\SurviveMe\\SurviveMe\\SurviveMe.csproj",
+        "projectUniqueName": "D:\\CC1\\SurviveMe\\SurviveMe\\SurviveMe.csproj",
         "projectName": "SurviveMe",
-        "projectPath": "D:\\SurviveMe\\SurviveMe\\SurviveMe\\SurviveMe.csproj",
+        "projectPath": "D:\\CC1\\SurviveMe\\SurviveMe\\SurviveMe.csproj",
         "packagesPath": "C:\\Users\\liamk\\.nuget\\packages\\",
-        "outputPath": "D:\\SurviveMe\\SurviveMe\\SurviveMe\\obj\\",
+        "outputPath": "D:\\CC1\\SurviveMe\\SurviveMe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",

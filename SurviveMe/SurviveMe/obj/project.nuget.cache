@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "pmpM4/Nu57bgYbtL3KVzVSO5RRCwKktCZXR36WuxnauKozumrQTiNV39rn0MUaiGJAZOw/hRueApA5sxFX86Aw==",
+  "dgSpecHash": "9gKXaeUIUsNSrHDX4E8OJUoUJnwSa/2x+QKJlOLsdVpHD3cQzEtZs9jPtYNTK3R02CiUsVP/uNxdyskmH+7Hsw==",
   "success": true,
-  "projectFilePath": "D:\\SurviveMe\\SurviveMe\\SurviveMe\\SurviveMe.csproj",
+  "projectFilePath": "D:\\CC1\\SurviveMe\\SurviveMe\\SurviveMe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\liamk\\.nuget\\packages\\firebasedatabase.net\\4.0.4\\firebasedatabase.net.4.0.4.nupkg.sha512",
     "C:\\Users\\liamk\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
     "C:\\Users\\liamk\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\liamk\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
     "C:\\Users\\liamk\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\liamk\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\liamk\\.nuget\\packages\\system.reactive\\4.0.0\\system.reactive.4.0.0.nupkg.sha512",
