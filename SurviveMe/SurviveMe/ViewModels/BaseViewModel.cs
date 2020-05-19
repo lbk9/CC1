@@ -3,11 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-using Xamarin.Forms;
-
-using SurviveMe.Models;
-using SurviveMe.Services;
-
 namespace SurviveMe.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
