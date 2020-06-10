@@ -1,0 +1,17 @@
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\Views\AuthenticationPage.xaml.g.cs
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\Views\BookACallPage.xaml.g.cs
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\Views\DashboardPage.xaml.g.cs
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\Views\LandingPage.xaml.g.cs
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\SurviveMeCC1.csproj.CoreCompileInputs.cache
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\SurviveMeCC1.AssemblyInfoInputs.cache
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\SurviveMeCC1.AssemblyInfo.cs
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\SurviveMeCC1.dll
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\SurviveMeCC1.pdb
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\bin\Debug\netstandard2.0\SurviveMeCC1.deps.json
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\bin\Debug\netstandard2.0\SurviveMeCC1.dll
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\bin\Debug\netstandard2.0\SurviveMeCC1.pdb
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\liamk\source\repos\SurviveMeCC1\SurviveMeCC1\SurviveMeCC1\obj\Debug\netstandard2.0\SurviveMeCC1.csprojAssemblyReference.cache

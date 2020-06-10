@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             x:Class="SurviveMeCC1.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="cc1green">#77AD96</Color>
+            <Color x:Key="cc1darkgreen">#009900</Color>
+            <Color x:Key="cc1orange">#E87F44</Color>
+            <Color x:Key="cc1red">#E60000</Color>
+            <Color x:Key="cc1white">#FFFFFF</Color>
+            <Color x:Key="cc1grey">#BABABA</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor"
+                        Value="{StaticResource cc1green}" />
+                <Setter Property="BarTextColor"
+                        Value="{StaticResource cc1white}" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>

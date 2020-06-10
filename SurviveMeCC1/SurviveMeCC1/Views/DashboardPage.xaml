@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SurviveMeCC1.Views.DashboardPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.1*" />
+                <ColumnDefinition Width="0.8*" />
+                <ColumnDefinition Width="0.1*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1"
+                   Margin="0,50,0,0"
+                   Text="CC1: Hussars"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Black"
+                   FontSize="Large" />
+            <Label Grid.Row="1"
+                   Grid.Column="1"
+                   Text="Use this app to talk and get advice from a buddy. All our volunteers are Mental Health Qualified ex-servicemen"
+                   FontSize="Body"
+                   TextColor="Black"
+                   LineBreakMode="WordWrap" />
+            <Button Grid.Row="2"
+                    Grid.Column="1"
+                    Text="Talk to a veteran"
+                    CornerRadius="10"
+                    BackgroundColor="{StaticResource cc1orange}"
+                    TextColor="White"
+                    Command="{Binding ToBookACallCommand}"/>
+            <Button Grid.Row="3"
+                    Grid.Column="1"
+                    Text="Information, advice and support services"
+                    CornerRadius="10"
+                    BackgroundColor="{StaticResource cc1green}"
+                    TextColor="White"
+                    Command="{Binding OpenInfoLinkCommand}" />
+            <Button Grid.Row="4"
+                    Grid.Column="1"
+                    Text="Worried about someone?"
+                    CornerRadius="10"
+                    BackgroundColor="{StaticResource cc1green}"
+                    TextColor="White"
+                    Command="{Binding OpenHelpLinkCommand}" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

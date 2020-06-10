@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "6ndL83e/D4yotbomeAiC9Uz83Wu1mhUT5083bykh/3N4L4+nk2ic+1rZeGVpKji+puqY9S7Jfc/LLBaG7ZBHgg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\liamk\\source\\repos\\SurviveMeCC1\\SurviveMeCC1\\SurviveMeCC1.iOS\\SurviveMeCC1.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\liamk\\.nuget\\packages\\dryioc.dll\\4.0.7\\dryioc.dll.4.0.7.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\firebasedatabase.net\\4.0.4\\firebasedatabase.net.4.0.4.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\litedb\\4.1.4\\litedb.4.1.4.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\prism.dryioc.forms\\7.2.0.1422\\prism.dryioc.forms.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\prism.forms\\7.2.0.1422\\prism.forms.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\system.reactive\\4.0.0\\system.reactive.4.0.0.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\system.reflection.typeextensions\\4.3.0\\system.reflection.typeextensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.3.0\\system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\xamarin.essentials.interfaces\\1.5.2\\xamarin.essentials.interfaces.1.5.2.nupkg.sha512",
+    "C:\\Users\\liamk\\.nuget\\packages\\xamarin.forms\\4.5.0.617\\xamarin.forms.4.5.0.617.nupkg.sha512"
+  ],
+  "logs": []
+}
