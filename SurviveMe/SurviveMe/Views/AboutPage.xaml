@@ -1,46 +1,43 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SurviveMe.Views.AboutPage"
-             xmlns:vm="clr-namespace:SurviveMe.ViewModels"
              Title="Help">
-    <ContentPage.BindingContext>
-        <vm:AboutViewModel />
-    </ContentPage.BindingContext>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.05*" />
-            <ColumnDefinition Width="0.9*" />
-            <ColumnDefinition Width="0.05*" />
-        </Grid.ColumnDefinitions>
-        <StackLayout Grid.Column="1">
-            <Label Text="Emegerencies"
-                   FontSize="Medium"
-                   TextColor="Black"/>
-            <Label Text="This app is for helping with a crisis but not an emergency where you're in danger. If you or someone else needs urgent help call 999."
-                   FontSize="Body"/>
-        </StackLayout>
-        <Label Grid.Row="1"
-               Grid.Column="1" 
-               Text="If you or someone you know needs immediate help call 999"/>
-        <StackLayout Grid.Row="2"
-                     Grid.Column="1">
-            <Label Text="Need help with registration"
-                   FontSize="Medium"
-                   TextColor="Black" />
-            <Label Text="If you are having problems with registration, please email our support team at:"
-                   FontSize="Body" />
-            <Label Text="CC1Hussars@xyz.com"
-                   FontSize="Body" />
-        </StackLayout>
-    </Grid>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.05*" />
+                <ColumnDefinition Width="0.9*" />
+                <ColumnDefinition Width="0.05*" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Column="1">
+                <Label Text="Emegerencies"
+                       FontSize="Medium"
+                       TextColor="Black" />
+                <Label Text="This app is for helping with a crisis but not an emergency where you're in danger. If you or someone else needs urgent help call 999."
+                       FontSize="Body" />
+            </StackLayout>
+            <Label Grid.Row="1"
+                   Grid.Column="1"
+                   Text="If you or someone you know needs immediate help call 999" />
+            <StackLayout Grid.Row="2"
+                         Grid.Column="1">
+                <Label Text="Need help with registration"
+                       FontSize="Medium"
+                       TextColor="Black" />
+                <Label Text="If you are having problems with registration, please email our support team at:"
+                       FontSize="Body" />
+                <Label Text="CC1Hussars@xyz.com"
+                       FontSize="Body" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

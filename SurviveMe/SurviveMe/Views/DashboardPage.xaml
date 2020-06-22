@@ -1,17 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="clr-namespace:SurviveMe.ViewModels"
-             xmlns:svc="clr-namespace:SurviveMe.Services"
-             mc:Ignorable="d"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SurviveMe.Views.DashboardPage"
-             Title="Welcome to CC1 Hussars"
-             x:Name="BrowseItemsPage">
-    <ContentPage.BindingContext>
-        <vm:DashboardViewModel />
-    </ContentPage.BindingContext>
+             Title="{Binding Title}">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -44,21 +37,21 @@
                     CornerRadius="10"
                     BackgroundColor="{StaticResource cc1orange}"
                     TextColor="White"
-                    Clicked="TalkToVeteranClicked" />
+                    Command="{Binding ToBookACallCommand}"/>
             <Button Grid.Row="3"
                     Grid.Column="1"
                     Text="Information, advice and support services"
                     CornerRadius="10"
                     BackgroundColor="{StaticResource cc1green}"
                     TextColor="White"
-                    Clicked="InfoClicked" />
+                    Command="{Binding OpenInfoLinkCommand}" />
             <Button Grid.Row="4"
                     Grid.Column="1"
                     Text="Worried about someone?"
                     CornerRadius="10"
                     BackgroundColor="{StaticResource cc1green}"
                     TextColor="White"
-                    Clicked="HelpClicked" />
+                    Command="{Binding OpenHelpLinkCommand}" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

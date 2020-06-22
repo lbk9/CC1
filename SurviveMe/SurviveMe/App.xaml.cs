@@ -1,30 +1,47 @@
-﻿using System;
+using Prism;
+using Prism.Ioc;
+using SurviveMe.ViewModels;
+using SurviveMe.Views;
+using Xamarin.Essentials.Interfaces;
+using Xamarin.Essentials.Implementation;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SurviveMe.Services;
-using SurviveMe.Views;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace SurviveMe
 {
-    public partial class App : Application
+    public partial class App
     {
+        /* 
+         * The Xamarin Forms XAML Previewer in Visual Studio uses System.Activator.CreateInstance.
+         * This imposes a limitation in which the App class must have a default constructor. 
+         * App(IPlatformInitializer initializer = null) cannot be handled by the Activator.
+         */
+        public App() : this(null) { }
 
-        public App()
+        public App(IPlatformInitializer initializer) : base(initializer) { }
+
+        protected override async void OnInitialized()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new LandingPage());
+
+            await NavigationService.NavigateAsync("NavigationPage/LandingPage");
         }
 
-        protected override void OnStart()
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-        }
+            containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
+            containerRegistry.RegisterSingleton<IUserService, UserService>();
+            containerRegistry.Register<FirebaseHelper>();
 
-        protected override void OnSleep()
-        {
-        }
-
-        protected override void OnResume()
-        {
+            containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<LandingPage, LandingPageViewModel>();
+            containerRegistry.RegisterForNavigation<DashboardPage, DashboardPageViewModel>();
+            containerRegistry.RegisterForNavigation<AboutPage, AboutPageViewModel>();
+            containerRegistry.RegisterForNavigation<BookACallPage, BookACallPageViewModel>();
+            containerRegistry.RegisterForNavigation<AuthenticationPage, AuthenticationPageViewModel>();
         }
     }
 }

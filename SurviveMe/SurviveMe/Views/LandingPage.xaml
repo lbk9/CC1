@@ -1,9 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SurviveMe.Views.LandingPage"
              Title="CC1: Hussars">
     <ContentPage.Content>
@@ -20,18 +19,18 @@
                 <ColumnDefinition Width="0.8*" />
                 <ColumnDefinition Width="0.1*" />
             </Grid.ColumnDefinitions>
-            <Label Grid.Column="1" 
+            <Label Grid.Column="1"
                    Margin="0,50,0,0"
                    Text="Welcome to CC1: Hussars"
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
-                   FontSize="Large"/>
+                   FontSize="Large" />
             <Label Grid.Row="1"
                    Grid.Column="1"
                    Text="Use this app to talk and get advice from a Mental Health First Aid Qualified Ex-serviceman buddy"
                    FontSize="Body"
                    TextColor="Black"
-                   LineBreakMode="WordWrap"/>
+                   LineBreakMode="WordWrap" />
             <Label Grid.Row="2"
                    Grid.Column="1"
                    FontSize="Body"
@@ -40,17 +39,17 @@
                    LineBreakMode="WordWrap" />
             <Button Grid.Row="3"
                     Grid.Column="1"
-                    Text="Register" 
+                    Text="Register"
                     CornerRadius="10"
                     BackgroundColor="{StaticResource cc1orange}"
                     TextColor="White"
-                    Clicked="Register_Clicked"/>
+                    Command="{Binding ToAuthenticationCommand}" />
             <Button Grid.Row="4"
                     Grid.Column="1"
                     Text="I need help immediately"
                     CornerRadius="10"
                     BackgroundColor="{StaticResource cc1grey}"
-                    Clicked="Help_Clicked" />
+                    Command="{Binding ToHelpCommand}" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

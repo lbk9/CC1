@@ -1,10 +1,9 @@
-﻿using Firebase.Database;
+using Firebase.Database;
 using Firebase.Database.Query;
 using SurviveMe.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace SurviveMe.Services
