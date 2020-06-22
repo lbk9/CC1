@@ -5,9 +5,9 @@
              x:Class="SurviveMe.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="cc1green">#77AD96</Color>
+            <Color x:Key="cc1green">#006837</Color>
             <Color x:Key="cc1darkgreen">#009900</Color>
-            <Color x:Key="cc1orange">#E87F44</Color>
+            <Color x:Key="cc1orange">#F15B26</Color>
             <Color x:Key="cc1red">#E60000</Color>
             <Color x:Key="cc1white">#FFFFFF</Color>
             <Color x:Key="cc1grey">#BABABA</Color>

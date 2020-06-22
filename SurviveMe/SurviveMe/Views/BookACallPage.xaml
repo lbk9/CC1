@@ -9,8 +9,8 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="200" />
-                <RowDefinition Height="90" />
+                <RowDefinition Height="0.8*" />
+                <RowDefinition Height="0.2*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.1*" />
@@ -18,24 +18,70 @@
                 <ColumnDefinition Width="0.1*" />
             </Grid.ColumnDefinitions>
             <StackLayout Grid.Column="1"
-                         VerticalOptions="Center">
+                         VerticalOptions="Start">
                 <Label FontSize="Medium"
                        TextColor="Black"
                        Text="We've got your back" />
                 <Label FontSize="Medium"
                        TextColor="Black"
-                       Text="You're our priority - one of our buddies will call you within the next five minutes:" />
-                <Label FontSize="Medium"
-                       TextColor="Black"
-                       Text="07766555444" />
+                       Text="When would be a convenient for a Buddy to call?" />
+                <Picker SelectedIndex="1"
+                        ItemsSource="{Binding CallTimesList}" />
+                <Label Text="We'll call you on this phone number:"
+                       FontSize="Medium"
+                       TextColor="Black"/>
+                <Label Text="0123456789"
+                       FontSize="Medium"
+                       TextColor="Black"/>
+                <Label Text="Optional - let us know how we can help you (pick as many as you need):"
+                       FontSize="Medium"
+                       TextColor="Black" />
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox IsChecked="False"
+                              Color="{StaticResource cc1green}"
+                              VerticalOptions="Center"/>
+                    <Label Text="Need to talk to someone"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox IsChecked="False"
+                              Color="{StaticResource cc1green}"
+                              VerticalOptions="Center"/>
+                    <Label Text="Money problems, including war pensions, benefits and debt"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox IsChecked="False"
+                              Color="{StaticResource cc1green}"
+                              VerticalOptions="Center"/>
+                    <Label Text="Drug or alcohol addictions"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox IsChecked="False"
+                              Color="{StaticResource cc1green}"
+                              VerticalOptions="Center"/>
+                    <Label Text="Sadness, depression or trauma"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox IsChecked="False"
+                              Color="{StaticResource cc1green}"
+                              VerticalOptions="Center"/>
+                    <Label Text="Medical problems, injuries or disability"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+
             </StackLayout>
             <Button Grid.Column="1"
                     Grid.Row="1"
                     Text="Book a buddy call"
                     CornerRadius="10"
+                    Margin="20"
                     BackgroundColor="{StaticResource cc1orange}"
                     TextColor="White"
-                    Command="{Binding CompleteBookingCommand}"/>
+                    VerticalOptions="End"
+                    Command="{Binding CallRequestedCommand}"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

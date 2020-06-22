@@ -57,7 +57,7 @@ namespace SurviveMe.ViewModels
 
             _userService.StoreUser(user);
             // Pass User model as navparams
-            await _navigationService.NavigateAsync("DashboardPage");
+            await _navigationService.NavigateAsync("app:///NavigationPage/DashboardPage");
         }
     }
 }

@@ -4,6 +4,7 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Essentials;
 
 namespace SurviveMe.ViewModels
 {
@@ -13,17 +14,26 @@ namespace SurviveMe.ViewModels
         private INavigationService _navigationService;
 
         // Commands
-        public DelegateCommand CompleteBookingCommand;
+        public DelegateCommand CallRequestedCommand { get; private set; }
+
+        // Properties
+        private List<string> _callTimesList;
+        public List<string> CallTimesList
+        {
+            get { return _callTimesList; }
+            set { SetProperty(ref _callTimesList, value); }
+        }
 
         public BookACallPageViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
-            CompleteBookingCommand = new DelegateCommand(CompleteBooking);
+            CallRequestedCommand = new DelegateCommand(CallRequested);
+            CallTimesList = new List<string> { "Now - within the next five minutes", "Select a time" };
         }
 
-        private async void CompleteBooking()
+        private async void CallRequested()
         {
-            await _navigationService.NavigateAsync("DashboardPage");
+            await _navigationService.NavigateAsync("app:///NavigationPage/DashboardPage");
         }
     }
 }

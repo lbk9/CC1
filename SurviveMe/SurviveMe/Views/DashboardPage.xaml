@@ -10,9 +10,9 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="100" />
                 <RowDefinition Height="100" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.1*" />
@@ -21,19 +21,19 @@
             </Grid.ColumnDefinitions>
             <Label Grid.Column="1"
                    Margin="0,50,0,0"
-                   Text="CC1: Hussars"
+                   Text="Charlie Charlie One"
                    HorizontalTextAlignment="Center"
                    TextColor="Black"
                    FontSize="Large" />
             <Label Grid.Row="1"
                    Grid.Column="1"
-                   Text="Use this app to talk and get advice from a buddy. All our volunteers are Mental Health Qualified ex-servicemen"
+                   Text="This app provides a safe platform for you to talk and gain the support you need. All our volunteer Buddies are Mental Health Qualified ex-servicemen and women."
                    FontSize="Body"
                    TextColor="Black"
                    LineBreakMode="WordWrap" />
             <Button Grid.Row="2"
                     Grid.Column="1"
-                    Text="Talk to a veteran"
+                    Text="Talk to a Buddy"
                     CornerRadius="10"
                     BackgroundColor="{StaticResource cc1orange}"
                     TextColor="White"

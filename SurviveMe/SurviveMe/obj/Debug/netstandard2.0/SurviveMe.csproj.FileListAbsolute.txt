@@ -1,7 +1,6 @@
 D:\CharlieCharlieOne\SurviveMe\SurviveMe\bin\Debug\netstandard2.0\SurviveMe.deps.json
 D:\CharlieCharlieOne\SurviveMe\SurviveMe\bin\Debug\netstandard2.0\SurviveMe.dll
 D:\CharlieCharlieOne\SurviveMe\SurviveMe\bin\Debug\netstandard2.0\SurviveMe.pdb
-D:\CharlieCharlieOne\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.csprojAssemblyReference.cache
 D:\CharlieCharlieOne\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\CharlieCharlieOne\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 D:\CharlieCharlieOne\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\Views\AuthenticationPage.xaml.g.cs
@@ -15,3 +14,4 @@ D:\CharlieCharlieOne\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.Asse
 D:\CharlieCharlieOne\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\XamlC.stamp
 D:\CharlieCharlieOne\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.dll
 D:\CharlieCharlieOne\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.pdb
+D:\CharlieCharlieOne\SurviveMe\SurviveMe\obj\Debug\netstandard2.0\SurviveMe.csprojAssemblyReference.cache

@@ -23,8 +23,8 @@
 	.section	.rodata..L.str.1,"aMS",%progbits,1
 	.type	.L.str.1, %object
 .L.str.1:
-	.asciz	"com.companyname.appname"
-	.size	.L.str.1, 24
+	.asciz	"com.companyname.surviveme"
+	.size	.L.str.1, 26
 	.section	.data.application_config,"aw",%progbits
 	.type	application_config, %object
 	.p2align	2
@@ -89,7 +89,7 @@ mono_aot_mode_name:
 	.section	.rodata..L.str.8,"aMS",%progbits,1
 	.type	.L.str.8, %object
 .L.str.8:
-	.asciz	"03c1fa6e-1539-4033-a9ae-1c821ac8afb1"
+	.asciz	"f421ddb5-126f-473f-af93-860bdad56cd4"
 	.size	.L.str.8, 37
 	.section	.rodata..L.str.9,"aMS",%progbits,1
 	.type	.L.str.9, %object

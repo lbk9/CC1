@@ -1,9 +1,5 @@
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\SurviveMe.Android.dll
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\SurviveMe.Android.pdb
-D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\com.companyname.appname.apk
-D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\com.companyname.appname.aab
-D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\com.companyname.appname-Signed.aab
-D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\com.companyname.appname-Signed.apk
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\SurviveMe.dll
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\SurviveMe.pdb
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\MonoAndroid,Version=v10.0.AssemblyAttributes.cs
@@ -44,10 +40,7 @@ D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\XamlC.stamp
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\SurviveMe.Android.csproj.CopyComplete
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\SurviveMe.Android.dll
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\SurviveMe.Android.pdb
-D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\bin\com.companyname.appname.apk
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\bin\base.zip
-D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\bin\com.companyname.appname.aab
-D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\bin\com.companyname.appname.apks
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\res\mipmap-hdpi\ic_launcher.png
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\res\mipmap-mdpi\ic_launcher.png
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\res\mipmap-xhdpi\ic_launcher.png
@@ -511,7 +504,6 @@ D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\src\mono\
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\src\mono\MonoPackageManager_Resources.java
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\src\xamarin\essentials\fileProvider.java
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\bin\packaged_resources
-D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\src\com\companyname\appname\R.java
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\typemap.jm.arm64-v8a.o
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\typemap.mj.arm64-v8a.o
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\typemap.jm.armeabi-v7a.o
@@ -537,3 +529,12 @@ D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\stamp\_ConvertRes
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\com.companyname.surviveme.apk
+D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\com.companyname.surviveme.aab
+D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\com.companyname.surviveme-Signed.aab
+D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\bin\Debug\com.companyname.surviveme-Signed.apk
+D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\bin\com.companyname.surviveme.apk
+D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\bin\com.companyname.surviveme.aab
+D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\bin\com.companyname.surviveme.apks
+D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\android\src\com\companyname\surviveme\R.java
+D:\CharlieCharlieOne\SurviveMe\SurviveMe.Android\obj\Debug\100\res\drawable\outline_info.png
