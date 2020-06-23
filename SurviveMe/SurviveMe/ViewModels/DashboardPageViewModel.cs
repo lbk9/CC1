@@ -6,11 +6,12 @@ using SurviveMe.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Xamarin.Essentials;
 
 namespace SurviveMe.ViewModels
 {
-    public class DashboardPageViewModel : BindableBase
+    public class DashboardPageViewModel : BindableBase, INavigationAware
     {
         //Dependencies
         private INavigationService _navigationService;
@@ -29,6 +30,13 @@ namespace SurviveMe.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
+        private User _activeUser;
+        public User ActiveUser
+        {
+            get { return _activeUser; }
+            set { SetProperty(ref _activeUser, value); }
+        }
+
         public DashboardPageViewModel(INavigationService navigationService, IUserService userService)
         {
             _navigationService = navigationService;
@@ -37,6 +45,15 @@ namespace SurviveMe.ViewModels
             OpenHelpLinkCommand = new DelegateCommand(OpenHelpLink);
             OpenInfoLinkCommand = new DelegateCommand(OpenInfoLink);
             ToBookACallCommand = new DelegateCommand(ToBookACall);
+        }
+
+        public void OnNavigatedTo(INavigationParameters parameters)
+        {
+            if (parameters != null && parameters.ContainsKey("userModel"))
+            {
+                var activeUser = parameters["userModel"] as User;
+                ActiveUser = activeUser;
+            }
         }
 
         private async void OpenHelpLink()
@@ -51,7 +68,16 @@ namespace SurviveMe.ViewModels
 
         private async void ToBookACall()
         {
-            await _navigationService.NavigateAsync("BookACallPage");
+            var navParams = new NavigationParameters
+            {
+                { "activeUser", ActiveUser }
+            };
+            await _navigationService.NavigateAsync(NavigationConstants.BookACallRelativePath, navParams);
+        }
+
+        public void OnNavigatedFrom(INavigationParameters parameters)
+        {
+            throw new NotImplementedException();
         }
     }
 }

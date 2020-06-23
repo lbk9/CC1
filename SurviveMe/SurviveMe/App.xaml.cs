@@ -33,7 +33,9 @@ namespace SurviveMe
         {
             containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
             containerRegistry.RegisterSingleton<IUserService, UserService>();
+            containerRegistry.Register<ICaseManagementService, CaseManagementService>();
             containerRegistry.Register<FirebaseHelper>();
+           
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();

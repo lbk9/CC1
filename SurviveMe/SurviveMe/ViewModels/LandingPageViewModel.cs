@@ -23,12 +23,12 @@ namespace SurviveMe.ViewModels
 
         private async void ToAuthentication()
         {
-            var result = await _navigationService.NavigateAsync("AuthenticationPage");
+            var result = await _navigationService.NavigateAsync(NavigationConstants.AuthenticationRelativePath);
         }
 
         private async void ToHelp()
         {
-            await _navigationService.NavigateAsync("AboutPage");
+            await _navigationService.NavigateAsync(NavigationConstants.HelpRelativePath);
         }
     }
 }

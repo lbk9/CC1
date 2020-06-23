@@ -30,7 +30,7 @@
                 <Label Text="We'll call you on this phone number:"
                        FontSize="Medium"
                        TextColor="Black"/>
-                <Label Text="0123456789"
+                <Label Text="{Binding PhoneNumber}"
                        FontSize="Medium"
                        TextColor="Black"/>
                 <Label Text="Optional - let us know how we can help you (pick as many as you need):"
@@ -73,15 +73,24 @@
                 </StackLayout>
 
             </StackLayout>
-            <Button Grid.Column="1"
-                    Grid.Row="1"
-                    Text="Book a buddy call"
-                    CornerRadius="10"
-                    Margin="20"
-                    BackgroundColor="{StaticResource cc1orange}"
-                    TextColor="White"
-                    VerticalOptions="End"
-                    Command="{Binding CallRequestedCommand}"/>
+            <StackLayout Grid.Column="1"
+                         Grid.Row="1"
+                         Orientation="Horizontal">
+                <Button Text="Book a buddy call"
+                        CornerRadius="10"
+                        Margin="20"
+                        BackgroundColor="{StaticResource cc1orange}"
+                        TextColor="White"
+                        VerticalOptions="End"
+                        Command="{Binding CallRequestedCommand}" />
+                <Button Text="Cancel"
+                        CornerRadius="10"
+                        Margin="20"
+                        BackgroundColor="{StaticResource cc1orange}"
+                        TextColor="White"
+                        VerticalOptions="End"
+                        Command="{Binding BackToDashboardCommand}" />
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

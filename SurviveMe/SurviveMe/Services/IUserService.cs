@@ -8,7 +8,6 @@ namespace SurviveMe.Services
 {
     public interface IUserService
     {
-        User ActiveUser { get; }
         void StoreUser(User user);
         Task<User> GetUser(Guid id);
         Task<List<User>> GetAllUsers();

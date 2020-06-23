@@ -14,8 +14,6 @@ namespace SurviveMe.Services
             _firebaseHelper = firebaseHelper;
         }
 
-        public User ActiveUser { get; private set; }
-
         public async Task<List<User>> GetAllUsers()
         {
             var allUsers = await _firebaseHelper.GetAllUsers();
@@ -31,7 +29,6 @@ namespace SurviveMe.Services
         public async void StoreUser(User user)
         {
             await _firebaseHelper.AddUser(user);
-            ActiveUser = user;
         }
     }
 }

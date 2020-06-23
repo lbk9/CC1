@@ -10665,10 +10665,13 @@ namespace SurviveMe.Droid
 			public const int notify_panel_notification_icon_bg = 2131165303;
 			
 			// aapt resource value: 0x7F070078
-			public const int tooltip_frame_dark = 2131165304;
+			public const int outline_info = 2131165304;
 			
 			// aapt resource value: 0x7F070079
-			public const int tooltip_frame_light = 2131165305;
+			public const int tooltip_frame_dark = 2131165305;
+			
+			// aapt resource value: 0x7F07007A
+			public const int tooltip_frame_light = 2131165306;
 			
 			static Drawable()
 			{
@@ -11832,9 +11835,6 @@ namespace SurviveMe.Droid
 			
 			// aapt resource value: 0x7F0C0000
 			public const int ic_launcher = 2131492864;
-			
-			// aapt resource value: 0x7F0C0001
-			public const int outline_info_black_24dp = 2131492865;
 			
 			static Mipmap()
 			{

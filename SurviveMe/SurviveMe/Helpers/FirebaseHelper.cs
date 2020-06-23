@@ -10,7 +10,7 @@ namespace SurviveMe.Services
 {
     public class FirebaseHelper
     {
-        FirebaseClient firebase = new FirebaseClient("https://surviveme-92581.firebaseio.com/");
+        readonly FirebaseClient firebase = new FirebaseClient("https://surviveme-92581.firebaseio.com/");
 
         public async Task AddUser(User user)
         {
@@ -37,6 +37,12 @@ namespace SurviveMe.Services
                     Address = user.Object.Address,
                     EmergencyContact = user.Object.EmergencyContact,
                 }).ToList();
+        }
+
+        public async Task AddCase(UserCase userCase)
+        {
+            await firebase.Child("Cases")
+                .PostAsync(userCase);
         }
     }
 }

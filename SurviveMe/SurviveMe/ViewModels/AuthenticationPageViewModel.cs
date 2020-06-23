@@ -5,6 +5,7 @@ using Prism.Navigation;
 using SurviveMe.Models;
 using SurviveMe.Services;
 using System;
+using System.Threading.Tasks;
 
 namespace SurviveMe.ViewModels
 {
@@ -40,7 +41,7 @@ namespace SurviveMe.ViewModels
                 Id = Guid.NewGuid(),
                 Name = "sampleactive",
                 Password = "sample",
-                PhoneNumber = "sample",
+                PhoneNumber = "0123456789",
                 Email = "sample",
                 Address = new Address
                 {
@@ -56,8 +57,16 @@ namespace SurviveMe.ViewModels
             };
 
             _userService.StoreUser(user);
-            // Pass User model as navparams
-            await _navigationService.NavigateAsync("app:///NavigationPage/DashboardPage");
+            await NavigateToDashboard(user);
+        }
+
+        private async Task NavigateToDashboard(User user)
+        {
+            var navParams = new NavigationParameters
+            {
+                { "userModel", user }
+            };
+            await _navigationService.NavigateAsync(NavigationConstants.DashboardAbsolutePath, navParams);
         }
     }
 }
